@@ -41,7 +41,7 @@
     tags:
     - from:
         kind: DockerImage
-        name: ${SYNDESIS_REGISTRY}/{{Images.AtlasMapImagesPrefix}}/{{ Images.Syndesis.Atlasmap }}:{{ Tags.Atlasmap }}
+        name: {{Images.AtlasMapImagesPrefix}}/{{ Images.Syndesis.Atlasmap }}:{{ Tags.Atlasmap }}
       importPolicy:
         scheduled: true
       name: "{{ Tags.Syndesis }}"
@@ -71,7 +71,7 @@
     tags:
     - from:
         kind: DockerImage
-        name: ${SYNDESIS_REGISTRY}/{{Images.OAuthProxyImagePrefix}}/{{ Images.Support.OAuthProxy }}:{{ Tags.OAuthProxy }}
+        name: {{Images.OAuthProxyImagePrefix}}/{{ Images.Support.OAuthProxy }}:{{ Tags.OAuthProxy }}
       importPolicy:
         scheduled: true
       name: "{{ Tags.OAuthProxy }}"

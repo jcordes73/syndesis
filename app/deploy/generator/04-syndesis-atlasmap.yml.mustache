@@ -68,7 +68,7 @@
 {{^WithDockerImages}}
           image: ' '
 {{/WithDockerImages}}{{#WithDockerImages}}
-          image: ${SYNDESIS_REGISTRY}/{{Images.AtlasMapImagesPrefix}}/{{ Images.Syndesis.Atlasmap }}:{{ Tags.Atlasmap }}
+          image: {{Images.AtlasMapImagesPrefix}}/{{ Images.Syndesis.Atlasmap }}:{{ Tags.Atlasmap }}
 {{/WithDockerImages}}
           imagePullPolicy: IfNotPresent
 {{^Probeless}}

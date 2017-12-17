@@ -152,7 +152,7 @@ objects:
     tags:
     - from:
         kind: DockerImage
-        name: ${SYNDESIS_REGISTRY}/atlasmap/atlasmap:latest
+        name: atlasmap/atlasmap:latest
       importPolicy:
         scheduled: true
       name: "latest"
@@ -182,7 +182,7 @@ objects:
     tags:
     - from:
         kind: DockerImage
-        name: ${SYNDESIS_REGISTRY}/openshift/oauth-proxy:v1.1.0
+        name: openshift/oauth-proxy:v1.1.0
       importPolicy:
         scheduled: true
       name: "v1.1.0"
